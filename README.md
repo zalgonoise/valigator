@@ -1,2 +1,3 @@
-# valigator
-a data structure contents validation library for Go
+## valigator
+
+_a data structure contents validation library for Go_
