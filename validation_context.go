@@ -118,7 +118,7 @@ type noOpContextValidator[T any] struct{}
 // Validate implements the ContextValidator interface.
 //
 // This is a no-op call and the returned error is always nil.
-func (noOpContextValidator[T]) Validate(context.Context, T) error { return nil }
+func (noOpContextValidator[T]) Validate(ctx context.Context, value T) error { return nil }
 
 // nonNilContextFunc is a solution for not being able to create a type constraint for
 // ContextFunc-like functions *and* ContextValidator interface types like so:
