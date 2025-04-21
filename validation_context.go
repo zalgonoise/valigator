@@ -16,7 +16,7 @@ type ContextValidator[T any] interface {
 // ContextFunc is a function type that complies with the ContextValidator's Validate method signature.
 //
 // The ContextFunc type implements the ContextValidator interface, through a Validate method calling on itself.
-type ContextFunc[T any] func(context.Context, T) error
+type ContextFunc[T any] func(ctx context.Context, value T) error
 
 // Validate implements the ContextValidator interface.
 //
